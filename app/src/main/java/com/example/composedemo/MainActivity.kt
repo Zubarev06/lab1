@@ -48,8 +48,7 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
-        modifier = modifier
-    )
+        modifier = modifier)
 }
 
 @Preview(showBackground = true, showSystemUi = true)
@@ -57,10 +56,16 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun GreetingPreview() {
     ComposeDemoTheme {
         Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-            Greeting("Android", modifier = Modifier.padding(innerPadding))
+            Greeting("Compose", modifier = Modifier.padding(innerPadding))
         }
     }
 }
+
+@Composable
+fun DemoScreen(modifier: Modifier) {
+    TODO("Not yet implemented")
+}
+
 
 
 
